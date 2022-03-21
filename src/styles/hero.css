@@ -1,0 +1,16 @@
+.hero-content {
+  /*background-image: url("../pictures/kimzy-nanney-LNDgBERq8Q0-unsplash.jpg");*/
+  background-color: var(--swatch-yellow);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.hero-block {
+  display: flex;
+  padding-top: 100px;
+}
