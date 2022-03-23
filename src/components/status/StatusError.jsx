@@ -3,9 +3,9 @@ export default function StatusError() {
   return (
     <main className="statusLoading-content">
       <h3>Welcome to our app</h3>
-      <p>
+      <h3>
         Sorry we could not load the data. Please refresh the page to try again.
-      </p>
+      </h3>
       <div className="statusLoading-loader"></div>
     </main>
   );

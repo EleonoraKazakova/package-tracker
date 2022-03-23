@@ -11,21 +11,23 @@ export default function App() {
   const [orders, setOrders] = useState([]);
   const [status, setStatus] = useState(0);
 
-  const url = "https://my.api.mockaroo.com/insta-orders.json?key=e49e6840p";
+  const url = "https://my.api.mockaroo.com/insta-orders.json?key=e49e6840";
 
   async function loadData(url, setOrders, setStatus) {
     try {
       const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error("Network response was not OK");
+      }
       const json = await response.json();
       setOrders(json);
-      console.log("json:", json);
       setStatus(1);
     } catch (error) {
       console.error("There was an error:", error);
       setStatus(2);
     }
   }
-  console.log("status:", status);
+
   useEffect(() => loadData(url, setOrders, setStatus), []);
 
   return (

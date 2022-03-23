@@ -1,4 +1,12 @@
 .footer-content {
   height: 100px;
   background-color: var(--swatch-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-img {
+  width: 30px;
 }

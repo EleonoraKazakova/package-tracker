@@ -7,6 +7,7 @@ export default function NavigationBar() {
     <div className="bar-content">
       <Link to="/">
         <img src={Logo} className="navigationBar-logo" />
+        <p>Change language</p>
       </Link>
     </div>
   );
