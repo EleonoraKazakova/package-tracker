@@ -1,13 +1,18 @@
 .bar-content {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 30px;
   align-items: center;
-  background-color: #497007;
+  background-color: var(--swatch-dark-green);
   color: yellow;
   position: fixed;
   top: 0;
   width: 100%;
   height: 60px;
   z-index: 3;
+}
+
+.navigationBar-logo {
+  height: 40px;
+  padding-left: 48px;
 }
