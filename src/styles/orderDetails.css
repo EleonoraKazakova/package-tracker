@@ -1,5 +1,5 @@
 .orderDetails-content {
-  background-color: var(--swatch-yellow);
+  background-color: var(--swatch-light-blue);
   background-position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,10 +12,11 @@
 }
 
 .leaflet-container {
-  width: 500px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   border-radius: 10px;
 }
+
 .orderDetails-block {
   display: flex;
   flex-direction: row;
@@ -29,10 +30,15 @@
   display: flex;
   background-color: white /*var(--swatch-dark-red)*/;
   width: 200px;
-  height: 300px;
+  height: 200px;
   flex-direction: column;
-  justify-content: center;
-  color: rgb(9, 82, 18);
+  justify-content: flex-start;
+  color: var(--swatch-dark-blue);
   border-radius: 10px;
   align-items: center;
+  gap: 20px;
+}
+
+.orderDetails-text-line {
+  border-bottom: 1px solid var(--swatch-dark-blue);
 }

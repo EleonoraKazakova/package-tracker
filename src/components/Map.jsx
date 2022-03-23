@@ -3,7 +3,7 @@ import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import "leaflet/dist/leaflet.css";
 import { Icon } from "leaflet";
 
-export default function Map({ locationCoordinates }) {
+export default function Map({ locationCoordinates, location }) {
   return (
     <MapContainer center={locationCoordinates} zoom={13}>
       <TileLayer
@@ -20,7 +20,7 @@ export default function Map({ locationCoordinates }) {
           })
         }
       >
-        <Popup>Pepper. Vegan restaurant</Popup>
+        <Popup>{location}</Popup>
       </Marker>
     </MapContainer>
   );

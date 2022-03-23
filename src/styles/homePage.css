@@ -1,6 +1,6 @@
-.hero-content {
+.homePage-content {
   /*background-image: url("../pictures/kimzy-nanney-LNDgBERq8Q0-unsplash.jpg");*/
-  background-color: var(--swatch-yellow);
+  background-color: var(--swatch-light-blue);
   background-position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,9 +10,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  color: white;
 }
 
-.hero-block {
+.homePage-block {
   display: flex;
   gap: 20px;
   width: 70%;
