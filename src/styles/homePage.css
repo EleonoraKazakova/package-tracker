@@ -27,7 +27,7 @@
     gap: 20px;
     width: 70%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .homePage-content {
@@ -50,7 +50,7 @@
     gap: 20px;
     width: 70%;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .homePage-content {
@@ -59,7 +59,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     gap: 40px;
     color: white;

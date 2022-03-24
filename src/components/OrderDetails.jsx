@@ -21,21 +21,25 @@ export default function OrderDetails({ orders }) {
   return (
     <main>
       {currentOrder !== undefined ? (
-        <section className="orderDetails-grid orderDetails-content">
-          <div className="orderDetails-text">
-            <Details currentOrder={currentOrder} />
-          </div>
-          <button
-            onClick={() => navigate(-1)}
-            className="button-style orderDetails-button"
-          >
-            {t("GoBack")}
-          </button>
+        <section className="orderDetails-content">
+          <div className="orderDetails-grid">
+            <Details
+              currentOrder={currentOrder}
+              className="orderDetails-text"
+            />
 
-          <Map
-            locationCoordinates={locationCoordinates}
-            location={currentOrder.location_name}
-          />
+            <button
+              onClick={() => navigate(-1)}
+              className="button-style orderDetails-button"
+            >
+              {t("GoBack")}
+            </button>
+
+            <Map
+              locationCoordinates={locationCoordinates}
+              location={currentOrder.location_name}
+            />
+          </div>
         </section>
       ) : (
         <section className="orderDetails-error orderDetails-content-error">
