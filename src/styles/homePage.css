@@ -1,23 +1,72 @@
-.homePage-content {
-  /*background-image: url("../pictures/kimzy-nanney-LNDgBERq8Q0-unsplash.jpg");*/
-  background-color: var(--swatch-light-blue);
-  background-position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 40px;
-  color: white;
+@media (max-width: 499px) {
+  .homePage-block {
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .homePage-content {
+    background-color: var(--swatch-light-blue);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+    padding: 100px var(--space-big) 100px var(--space-big);
+  }
 }
 
-.homePage-block {
-  display: flex;
-  gap: 20px;
-  width: 70%;
-  flex-wrap: wrap;
+@media (min-width: 500px) and (max-width: 899px) {
+  .homePage-block {
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .homePage-content {
+    background-color: var(--swatch-light-blue);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+    padding: 100px 0 100px 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .homePage-block {
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .homePage-content {
+    background-color: var(--swatch-light-blue);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+    padding: 100px 0 100px 0;
+  }
+}
+
+.homePage-title {
+  text-align: center;
 }

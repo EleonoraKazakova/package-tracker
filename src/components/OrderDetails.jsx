@@ -19,27 +19,31 @@ export default function OrderDetails({ orders }) {
         ]
       : null;
   return (
-    <main className="orderDetails-content">
+    <main>
       {currentOrder !== undefined ? (
-        <div className="orderDetails-block">
-          <section className="orderDetails-text">
+        <section className="orderDetails-grid orderDetails-content">
+          <div className="orderDetails-text">
             <Details currentOrder={currentOrder} />
-            <button onClick={() => navigate(-1)} className="button-style">
-              {t("GoBack")}
-            </button>
-          </section>
+          </div>
+          <button
+            onClick={() => navigate(-1)}
+            className="button-style orderDetails-button"
+          >
+            {t("GoBack")}
+          </button>
+
           <Map
             locationCoordinates={locationCoordinates}
             location={currentOrder.location_name}
           />
-        </div>
+        </section>
       ) : (
-        <div className="orderDetails-error">
+        <section className="orderDetails-error orderDetails-content-error">
           <h2>We could not load your page. You need to go back</h2>
           <button onClick={() => navigate(-1)} className="button-style">
             <p>{t("GoBack")}</p>
           </button>
-        </div>
+        </section>
       )}
     </main>
   );

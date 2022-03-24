@@ -4,12 +4,14 @@ import "../styles/homePage.css";
 
 export default function HomePage({ orders }) {
   const { t } = useTranslation();
-  const dataOrders = orders.map((parcel) => <Order parcel={parcel} />);
+  const dataOrders = orders.map((parcel) => (
+    <Order parcel={parcel} key={parcel.id} />
+  ));
 
   return (
     <section className="homePage-content">
-      <h1>{t("title")}</h1>
-      <p className="homePage-block">{dataOrders}</p>
+      <h1 className="homePage-title">{t("title")}</h1>
+      <div className="homePage-block">{dataOrders}</div>
     </section>
   );
 }
