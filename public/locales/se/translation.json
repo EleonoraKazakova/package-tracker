@@ -1,0 +1,11 @@
+{
+  "title": "Hej! Vi har några paket för dig:",
+  "ViewDetails": "Visa detaljer",
+  "ParcelId": "Paket-id:",
+  "Status": "Status:",
+  "Location": "Plats:",
+  "GoBack": "Återvända",
+  "EstimatedDateOfArrival": "Beräknat ankomstdatum:",
+  "Sender": "Sändare:",
+  "Order": "Ordning:"
+}

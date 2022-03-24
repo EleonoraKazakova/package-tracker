@@ -1,15 +1,25 @@
+import { useTranslation } from "react-i18next";
+
 export default function Details({ currentOrder }) {
+  const { t } = useTranslation();
+  const dateOfArrival = currentOrder.eta.slice(0, -10);
   return (
     <div>
-      <p className="orderDetails-text-line">Order: {currentOrder.parcel_id}</p>
       <p className="orderDetails-text-line">
-        Estimated date of arrival: {currentOrder.eta.slice(0, -10)}
+        {t("Order")} {currentOrder.parcel_id}
       </p>
       <p className="orderDetails-text-line">
-        Location: {currentOrder.location_name}
+        {t("EstimatedDateOfArrival")} {dateOfArrival}
       </p>
-      <p className="orderDetails-text-line">Sender: {currentOrder.sender}</p>
-      <p className="orderDetails-text-line">Status: {currentOrder.status}</p>
+      <p className="orderDetails-text-line">
+        {t("Location")} {currentOrder.location_name}
+      </p>
+      <p className="orderDetails-text-line">
+        {t("Sender")} {currentOrder.sender}
+      </p>
+      <p className="orderDetails-text-line">
+        {t("Status")} {currentOrder.status}
+      </p>
     </div>
   );
 }
