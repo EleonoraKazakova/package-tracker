@@ -17,7 +17,12 @@
     flex-direction: column;
     gap: 40px;
     color: white;
-    padding: 100px var(--space-big) 100px var(--space-big);
+    padding: 100px var(--space-small) 100px var(--space-small);
+  }
+
+  .homePage-title {
+    text-align: center;
+    font-size: 26px;
   }
 }
 
@@ -36,11 +41,15 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: 40px;
     color: white;
     padding: 100px 0 100px 0;
+  }
+
+  .homePage-title {
+    text-align: center;
+    font-size: 26px;
   }
 }
 
@@ -59,14 +68,14 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: 40px;
     color: white;
     padding: 100px 0 100px 0;
   }
-}
 
-.homePage-title {
-  text-align: center;
+  .homePage-title {
+    text-align: center;
+    font-size: 32px;
+  }
 }

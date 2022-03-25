@@ -37,7 +37,6 @@ export default function OrderDetailsPage({ orders }) {
           />
         </div>
       </section>
-      )
     </main>
   );
 }

@@ -10,16 +10,14 @@
     border-radius: 15px;
     border: 2px solid var(--swatch-light-blue);
     cursor: pointer;
-    box-shadow: 2px 2px 3px rgb(78, 78, 85);
+    box-shadow: 3px 3px 3px rgb(78, 78, 85);
   }
 
   .navigationBar-content {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
     align-items: center;
     background-color: var(--swatch-dark-blue);
-    color: yellow;
     position: fixed;
     top: 0;
     width: 100%;
@@ -41,16 +39,14 @@
     border-radius: 15px;
     border: 2px solid var(--swatch-light-blue);
     cursor: pointer;
-    box-shadow: 2px 2px 3px rgb(78, 78, 85);
+    box-shadow: 3px 3px 3px rgb(78, 78, 85);
   }
 
   .navigationBar-content {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
     align-items: center;
     background-color: var(--swatch-dark-blue);
-    color: yellow;
     position: fixed;
     top: 0;
     width: 100%;

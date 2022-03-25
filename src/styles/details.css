@@ -1,8 +1,6 @@
 .details-text {
   color: var(--swatch-dark-blue);
   display: flex;
-  /*min-width: 300px;*/
   flex-direction: column;
   gap: 10px;
-  /*height: 20px;*/
 }

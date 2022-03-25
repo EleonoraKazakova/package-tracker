@@ -6,7 +6,6 @@
   background-color: var(--swatch-blue);
   border-radius: 10px;
   justify-content: space-between;
-  color: white;
   box-shadow: 5px 10px 15px #0e3e53;
 }
 
@@ -42,6 +41,5 @@ ul.no-bullets {
 
 .order-list-block {
   display: flex;
-  flex-direction: row;
   gap: 10px;
 }

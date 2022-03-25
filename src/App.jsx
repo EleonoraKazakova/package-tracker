@@ -31,7 +31,7 @@ export default function App() {
   useEffect(() => loadData(url, setOrders, setStatus), []);
 
   return (
-    <div className="app-grid">
+    <div>
       <BrowserRouter>
         <NavigationBar />
         {status === 0 && <StatusLoading />}
