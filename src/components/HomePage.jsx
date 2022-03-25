@@ -9,9 +9,9 @@ export default function HomePage({ orders }) {
   ));
 
   return (
-    <section className="homePage-content">
+    <main className="homePage-content">
       <h1 className="homePage-title">{t("title")}</h1>
-      <div className="homePage-block">{dataOrders}</div>
-    </section>
+      <section className="homePage-block">{dataOrders}</section>
+    </main>
   );
 }

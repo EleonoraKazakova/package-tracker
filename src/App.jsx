@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./styles/app.css";
-import Bar from "./components/NavigationBar";
+import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
 import StatusError from "./components/status/StatusError";
 import StatusLoading from "./components/status/StatusLoading";
@@ -33,7 +33,7 @@ export default function App() {
   return (
     <div className="app-grid">
       <BrowserRouter>
-        <Bar />
+        <NavigationBar />
         {status === 0 && <StatusLoading />}
         {status === 1 && <StatusLoaded orders={orders} />}
         {status === 2 && <StatusError />}

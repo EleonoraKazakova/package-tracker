@@ -15,7 +15,7 @@ export default function NavigationBar() {
   const srcImg = i18n.language === "en" ? English : Swedish;
 
   return (
-    <div className="navigationBar-content">
+    <nav className="navigationBar-content">
       <Link to="/">
         <img src={Logo} className="navigationBar-logo" />
       </Link>
@@ -25,6 +25,6 @@ export default function NavigationBar() {
         className="navigationBar-img"
         onClick={changeCurrentLanguage}
       />
-    </div>
+    </nav>
   );
 }

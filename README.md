@@ -5,7 +5,7 @@
 In this project I use React Hooks:
 
 - await Function
-- asinc Function
+- async Function
 - useState
 - ReactDOM
 - React Router
