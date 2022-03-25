@@ -7,10 +7,13 @@ import Swedish from "../pictures/Sweden.png";
 
 export default function NavigationBar() {
   const { i18n } = useTranslation();
-  const changeCurrentLanguage = () => {
+
+  function changeCurrentLanguage() {
     i18n.changeLanguage(i18n.language === "en" ? "se" : "en");
-  };
+  }
+
   const srcImg = i18n.language === "en" ? English : Swedish;
+
   return (
     <div className="navigationBar-content">
       <Link to="/">
@@ -20,7 +23,7 @@ export default function NavigationBar() {
       <img
         src={srcImg}
         className="navigationBar-img"
-        onClick={() => changeCurrentLanguage()}
+        onClick={changeCurrentLanguage}
       />
     </div>
   );

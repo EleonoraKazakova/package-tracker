@@ -7,5 +7,8 @@
   "GoBack": "Go back",
   "EstimatedDateOfArrival": "Estimated date of arrival:",
   "Sender": "Sender:",
-  "Order": "Order:"
+  "Order": "Order:",
+  "WelcomeToOurApp": "Welcome to our app",
+  "Sorry": "Sorry we could not load the data. Please refresh the page to try again.",
+  "Loading": "We are loading your parcels, please stay here!"
 }

@@ -4,6 +4,7 @@ import "../styles/details.css";
 export default function Details({ currentOrder }) {
   const { t } = useTranslation();
   const dateOfArrival = currentOrder.eta.slice(0, -10);
+
   return (
     <div className="details-text">
       <p className="orderDetails-text-line">

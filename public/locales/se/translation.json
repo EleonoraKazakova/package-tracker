@@ -7,5 +7,8 @@
   "GoBack": "Återvända",
   "EstimatedDateOfArrival": "Beräknat ankomstdatum:",
   "Sender": "Sändare:",
-  "Order": "Ordning:"
+  "Order": "Ordning:",
+  "WelcomeToOurApp": "Välkommen till vår app",
+  "Sorry": "Tyvärr kunde vi inte ladda data. Uppdatera sidan för att försöka igen.",
+  "Loading": "Vi laddar dina paket, vänligen stanna här!"
 }

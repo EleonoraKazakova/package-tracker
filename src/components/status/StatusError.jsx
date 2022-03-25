@@ -1,11 +1,13 @@
+import { useTranslation } from "react-i18next";
 import "../../styles/status.css";
+
 export default function StatusError() {
+  const { t } = useTranslation();
+
   return (
     <main className="status-content">
-      <h3>Welcome to our app</h3>
-      <h3>
-        Sorry we could not load the data. Please refresh the page to try again.
-      </h3>
+      <h3>{t("WelcomeToOurApp")}</h3>
+      <h3>{t("Sorry")}</h3>
       <div className="status-loader"></div>
     </main>
   );
