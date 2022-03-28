@@ -3,9 +3,10 @@ import { useParams, useNavigate } from "react-router-dom";
 import "../styles/orderDetails.css";
 import "../styles/base/button.css";
 
+// good
 export default function OrderDetailsError() {
   const { t } = useTranslation();
-  const params = useParams();
+  const params = useParams(); // unused code -1
   const navigate = useNavigate();
 
   return (

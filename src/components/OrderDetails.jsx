@@ -8,13 +8,10 @@ export default function OrderDetails({ orders }) {
   const params = useParams();
   const currentOrder = orders.find((order) => order.parcel_id === params.order);
 
-  return (
-    <main>
-      {currentOrder !== undefined ? (
-        <OrderDetailsPage orders={orders} />
-      ) : (
-        <OrderDetailsError />
-      )}
-    </main>
-  );
+  // Nesting -1
+  // The code works and i can understand it, but making an earlier return is a more elegant solution
+  // See example
+  if (currentOrder === undefined) return <OrderDetailsError />;
+
+  return <main>{/* Put the whole content of OrderDetailsPage here */}</main>;
 }

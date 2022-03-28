@@ -13,6 +13,8 @@ export default function Order({ parcel }) {
     [Globe, t("Location"), parcel.location_name],
   ];
 
+  // good idea of making the map pure, but you can skip the array and just pass the 3 args directly
+  // This could be a separate component as it has a lot of tags inside (li, img, div, p, and p)
   const parcelBlock = parcelData.map(([img, text, value]) => (
     <li className="order-list-block" key={value}>
       <img src={img} className="order-img" />
@@ -27,8 +29,11 @@ export default function Order({ parcel }) {
     <div className="order-content">
       <ul className="no-bullets">{parcelBlock}</ul>
 
+      {/* Semantic tags -1 */}
+      {/* Don't use a title <h4> as a link, this is just pure text use */}
+      {/* See the refactor */}
       <Link to={`/${parcel.parcel_id}`} className="order-button">
-        <h4>{t("ViewDetails")}</h4>
+        {t("ViewDetails")}
       </Link>
     </div>
   );
