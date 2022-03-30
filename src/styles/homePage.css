@@ -1,10 +1,15 @@
+/**
+  REFACTOR, YOU DONT NEED TO APPLY DISPLAY FLEX IN EVERY MEDIA QUERY,
+  EACH QUERY BUILDS WITH THE PRESETS PUT IN THE PREVIOUS ONE.
+*/
+
 @media (max-width: 499px) {
   .homePage-block {
-    display: flex;
-    gap: 20px;
-    width: 70%;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(4fr);
+    grid-column-gap: var(--space-medium);
+    grid-row-gap: var(--space-medium);
   }
 
   .homePage-content {
@@ -55,11 +60,11 @@
 
 @media (min-width: 900px) {
   .homePage-block {
-    display: flex;
-    gap: 20px;
-    width: 70%;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: var(--space-medium);
+    grid-row-gap: var(--space-medium);
   }
 
   .homePage-content {
